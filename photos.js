@@ -22,13 +22,13 @@ var filename;
 var currentFig;
  if (figureCount === 3) {
 for (var i = 1; i < 4; i++) {
-filename = "images/IMG_0" + photoOrder[i] + "sm.jpg";
+filename = "IMG_0" + photoOrder[i] + "sm.jpg";
 currentFig = document.getElementsByTagName("img")[i - 1];
 currentFig.src = filename;
 }
 } else {
  for (var i = 0; i < 5; i++) {
-filename = "images/IMG_0" + photoOrder[i] + "sm.jpg";
+filename = "IMG_0" + photoOrder[i] + "sm.jpg";
 currentFig = document.getElementsByTagName("img")[i];
 currentFig.src = filename;
  }
@@ -82,8 +82,8 @@ firstFigure.style.left = "45px";
 articleEl.insertBefore(firstFigure, document.getElementById("fig2"));
 figureCount = 5;
 // add appropriate src values to two new img elements
- document.getElementsByTagName("img")[0].src = "images/IMG_0" + photoOrder[0] + "sm.jpg";
- document.getElementsByTagName("img")[4].src = "images/IMG_0" + photoOrder[4] + "sm.jpg";
+ document.getElementsByTagName("img")[0].src = "IMG_0" + photoOrder[0] + "sm.jpg";
+ document.getElementsByTagName("img")[4].src = "IMG_0" + photoOrder[4] + "sm.jpg";
 //change button to hide extra images
 var numberButton = document.querySelector("#fiveButton p");
 numberButton.innerHTML = "Show fewer images";
